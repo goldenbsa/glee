@@ -4,5 +4,124 @@
 @import 'global';
 
 
+.header {
+  padding: 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item+&__item {
+    padding-left: 30px;
+  }
+
+  &__link {
+    @extend %rubik-500;
+    font-size: 15px;
+    color: #436372;
+
+    &:hover {
+      border-bottom: 1px solid #436372;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__link-search {
+    position: relative;
+    background-image: url('../images/icon/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 51px;
+    height: 52px;
+    border-radius: 50%;
+    margin-right: 21px;
+    background-color: #edf1f4;
+  }
+
+  &__link-favorites {
+    position: relative;
+    background-image: url('../images/icon/favorites.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 88px;
+    height: 51px;
+    border-radius: 25px 0 0 25px;
+    background-color: #fcd7b6;
+  }
+
+  &__link-basket {
+    position: relative;
+    background-image: url('../images/icon/basket.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 88px;
+    height: 51px;
+    top: 0;
+    border-radius: 0 25px 25px 0;
+    margin-right: 18px;
+    background-color: #fcd7b6;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      top: 10px;
+      background-color: #ffffff;
+    }
+  }
+
+  &__link-account {
+    position: relative;
+    background-image: url('../images/icon/account.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 51px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+  }
+
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 10px;
+    left: 46px;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 1.7;
+    color: #243f4d;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
