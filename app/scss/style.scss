@@ -41,7 +41,7 @@
 
   &__link-search {
     position: relative;
-    background-image: url('../images/icon/search.svg');
+    background-image: url('../images/icons/search.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 51px;
@@ -53,7 +53,7 @@
 
   &__link-favorites {
     position: relative;
-    background-image: url('../images/icon/favorites.svg');
+    background-image: url('../images/icons/favorites.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 88px;
@@ -64,7 +64,7 @@
 
   &__link-basket {
     position: relative;
-    background-image: url('../images/icon/basket.svg');
+    background-image: url('../images/icons/basket.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 88px;
@@ -86,7 +86,7 @@
 
   &__link-account {
     position: relative;
-    background-image: url('../images/icon/account.svg');
+    background-image: url('../images/icons/account.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 51px;
@@ -111,6 +111,140 @@
   }
 }
 
+.footer {}
+
+.footer-top {
+  padding: 70px 0 65px;
+  border-bottom: 1px solid #a3bbc8;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo-img {
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    color: #7b7b7b;
+    text-transform: none;
+    @extend %rubik-400;
+    font-size: 14px;
+  }
+
+  &__address,
+  &__phone,
+  &__email {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #7b7b7b;
+    text-transform: none;
+
+    span {
+      text-transform: uppercase;
+      line-height: 2.3;
+    }
+  }
+
+  &__contact,
+  &__services,
+  &__account {
+    width: 200px;
+    margin-right: 100px;
+  }
+
+  &__item-form {
+    max-width: 270px;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #1f2044;
+    padding-top: 16px;
+    margin-bottom: 14px;
+  }
+
+  &__link,
+  &__text {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 2.3;
+    color: #7b7b7b;
+  }
+
+  &__text p {
+    line-height: 2.1;
+    margin-bottom: 30px;
+  }
+
+  &__form-input {
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+    float: left;
+    border: none;
+    padding: 3px 15px 4px 15px;
+
+    &::placeholder {
+      @extend %dmsans-400;
+      font-size: 12px;
+      line-height: 1.2;
+      color: #234969;
+    }
+  }
+
+  &__form-btn {
+    @extend %dmsans-400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+    float: left;
+    width: 100px;
+    height: 38px;
+    padding-left: 0px;
+    background-color: #a3bbc8;
+    cursor: pointer;
+    border: none;
+  }
+
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+
+  &__copy,
+  &__menu-item,
+  &__menu-link {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 2.3;
+    color: #7b7b7b;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item + &__menu-item {
+    padding-left: 15px;
+
+    &::before {
+      content: '|';
+      padding-right: 10px;
+    }
+  }
+}
 
 
 
@@ -124,4 +258,8 @@
 
 
 
-@import 'media';
+
+
+// @import 'media' {
+
+// }
