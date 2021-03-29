@@ -6,6 +6,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  @extend %rubik-400;
+  font-size: 14px;
 }
 
 .main {
