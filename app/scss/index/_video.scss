@@ -1,0 +1,42 @@
+.video {
+  min-height: 500px;
+  position: relative;
+
+  &__link {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    object-fit: cover;
+    outline: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .play-icon {
+    width: 127px;
+    height: 127px;
+
+    --circle127-fill: rgba(163, 187, 200, .4);
+    --circle98-fill: #a3bbc8;
+    --arrow-fill: white;
+
+    &:hover {
+      --circle127-fill: rgba(163, 187, 200, .9);
+      --circle98-fill: rgba(14, 66, 94, 0.6);
+      --arrow-fill: rgba(2, 212, 65, 0.9);
+    }
+
+    &:active {
+      --circle127-fill: rgba(163, 187, 200, .9);
+      --circle98-fill: rgba(17, 14, 206, 0.6);
+      --arrow-fill: rgba(212, 2, 19, 0.9);
+    }
+  }
+
+}

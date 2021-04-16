@@ -1,0 +1,150 @@
+.blog {
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 110px 0 47px;
+  }
+
+  &__link {
+    display: inline-flex;
+    position: relative;
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $title;
+
+    &--icon {
+      width: 16px;
+      height: 13px;
+      margin: 2px 0 0 10px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px $lightskyblue;
+    }
+  }
+
+  &__news {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-gap: 30px 30px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__items {
+    background-color: white;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 5px;
+    max-width: 370px;
+    min-height: 420px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 28px;
+    bottom: -15px;
+    min-width: 103px;
+    height: 30px;
+    background-color: $btn-color;
+    border-radius: 15px;
+    @extend %poppins-700;
+    line-height: 1.4;
+    color: white;
+    border: none;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px $lightskyblue;
+    }
+  }
+
+  &__text {
+    font-family: DMSans;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: $mostly-black;
+    padding: 32px 30px 16px;
+    min-height: 110px;
+    min-width: 260px;
+  }
+
+  &__line {
+    max-width: 315px;
+    border: 1px solid $gray-light;
+    margin: 0 auto;
+  }
+
+  &__info {
+    position: relative;
+    @extend %rubik-400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: $dark-desaturated-blue;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+
+  &__icon {
+    width: 13px;
+    height: 13px;
+    margin-right: 3px;
+  }
+
+  &__text-data {
+    padding-right: 26px;
+  }
+
+  .slider-partners {
+    display: flex;
+    align-items: flex-end;
+    min-height: 437px;
+    background-color: $light-grayish-orange;
+    transform: translateY(-39%);
+    z-index: 2;
+    margin-bottom: -160px;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 267px;
+      max-width: 100%;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 100%;
+      min-height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .slider-partners {
+    background-color: $light-grayish-orange;
+  }
+
+  .slick-track {
+    top: -25px;
+  }
+}

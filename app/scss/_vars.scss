@@ -1,6 +1,5 @@
 $accent-color: #fcd7b6;
 $btn-color: #a3bbc8;
-$active-color: #ffffff;
 $link-color: #7b7b7b;
 $top-menu--color: #436372;
 $mostly-black: #1a1a1a;
@@ -8,7 +7,6 @@ $light-grayish-blue:#edf1f4;
 $grayish-blue: #d2d2d7;
 $title: #243f4d;
 $very-dark-blue: #234969;
-$grblue: #a3bbc8;
 $light-grayish-orange: #fef7f0;
 $grayish-orange: #e8e5e0;
 $dark-gray:#414141;
@@ -16,6 +14,9 @@ $very-gray: #585858;
 $dark-desaturated-blue: #1f2044;
 $very-dark: #191919;
 $gray-dark: #8b8b8b;
+$light-orange: #fde3cc;
+$gray-light: #f8f8f8;
+$lightskyblue: #87cefa;
 
 
 
@@ -54,3 +55,9 @@ $gray-dark: #8b8b8b;
   font-weight: 400;
 }
 
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

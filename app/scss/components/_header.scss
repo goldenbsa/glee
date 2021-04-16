@@ -1,0 +1,133 @@
+.header {
+
+  .container--big {
+    max-width: 1800px;
+  }
+
+  &__inner {
+    padding: 46px 0;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 151px;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px $lightskyblue;
+    }
+  }
+
+  .menu {
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        padding-left: 30px;
+      }
+    }
+
+    &__link {
+      @extend %dmsans-700;
+      font-size: 15px;
+      color: $top-menu--color;
+      padding: 0 2px 1px;
+
+      &:hover {
+        border-bottom: 1px solid $top-menu--color;
+        transition: all .3s;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $lightskyblue;
+      }
+    }
+  }
+
+  // right menu
+
+  .user-nav {
+    display: flex;
+    align-items: center;
+
+    .icon--search {
+      width: 19px;
+      height: 50px;
+    }
+
+    .icon--account {
+      width: 24px;
+      height: 50px;
+    }
+
+    .icon--search,
+    .icon--account {
+      &:hover {
+        --search-fill: white;
+        --account-fill: white;
+      }
+    }
+
+    &__link-favorites {
+      position: relative;
+      background-image: url('../images/icons/favorites.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 88px;
+      height: 51px;
+      border-radius: 25px 0 0 25px;
+      background-color: $accent-color;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $lightskyblue;
+      }
+    }
+
+    &__link-basket {
+      position: relative;
+      background-image: url('../images/icons/basket.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 88px;
+      height: 51px;
+      top: 0;
+      border-radius: 0 25px 25px 0;
+      margin-right: 18px;
+      background-color: $accent-color;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $lightskyblue;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 32px;
+        top: 10px;
+        background-color: white;
+      }
+    }
+
+    &__num {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: white;
+      border-radius: 50%;
+      top: 10px;
+      left: 46px;
+      @extend %dmsans-400;
+      font-size: 10px;
+      line-height: 1.7;
+      color: $title;
+      text-align: center;
+    }
+  }
+}

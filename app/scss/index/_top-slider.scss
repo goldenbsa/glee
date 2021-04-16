@@ -1,0 +1,111 @@
+.top-slider {
+  .container--big {
+    background-color: $accent-color;
+    padding-top: 100px;
+    position: relative;
+  }
+
+  &__content {
+    padding-top: 115px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    max-width: 530px;
+    @extend %dmsans-700;
+    font-size: 71px;
+    line-height: 1;
+    color: $title;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+
+  &__text p {
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: $top-menu--color;
+    margin-bottom: 38px;
+
+  }
+
+  &__link {
+    @extend %rubik-500;
+    font-size: 15px;
+    color: white;
+    padding-right: 45px;
+    outline: 0;
+  }
+
+  &__btn {
+    &:hover {
+    opacity: 0.7;
+    }
+  }
+
+  .icon-arrow {
+    width: 25px;
+    height: 12px;
+    --arrow-right-fill: white;
+  }
+
+  &__img-top {
+    padding: 176px 0px 105px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__img {
+    position: relative;
+    max-width: 640px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 622px;
+      height: 634px;
+      border-radius: 50%;
+      top: 0;
+      left: 130px;
+      background-color: rgba(67, 99, 114, 0.0);
+      background-image: linear-gradient(-90.0deg, white 0%, rgba(255, 255, 255, 0.0) 100%);
+      z-index: 3;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0 46px;
+
+    li {
+      button {
+        padding: 0;
+        border: 0;
+        @extend %rubik-500;
+        font-size: 10.9px;
+        color: $title;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        opacity: 0.5;
+        border-radius: 50%;
+
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    .slick-active {
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+}
