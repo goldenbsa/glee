@@ -5,55 +5,76 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Glee</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="top-container">
+    <div class="container--big">
       <div class="header__inner">
-        <a class="logo" href="#">
-          <img src="images/logo.png" alt="logo">
-        </a>
+        <nav class="nav">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
 
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home +</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Pages +</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">News</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact</a>
-            </li>
-          </ul>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pages +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">News</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="user-nav">
+            <button class="user-nav__btn button-circle" type="button">
+              <span class="sr-only"> search </span>
+              <a class="user-nav__link-search" href="#"></a>
+              <svg class="icon--search">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <a class="user-nav__link-favorites" href="#">
+              <span class="sr-only"> favorites </span>
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link-basket" href="#">
+              <span class="sr-only"> basket </span>
+              <span class="user-nav__num">0</span>
+            </a>
+            <button class="user-nav__btn button-circle" type="button">
+              <span class="sr-only"> account </span>
+              <a class="user-nav__link-account" href="#"></a>
+              <svg class="icon--account">
+                <use xlink:href="images/sprite.svg#account"></use>
+              </svg>
+            </button>
+          </div>
         </nav>
-        <div class="user-nav">
-          <a class="user-nav__link-search" href="#"></a>
-          <a class="user-nav__link-favorites" href="#">
-            <span class="user-nav__num">0</span>
-          </a>
-          <a class="user-nav__link-basket" href="#">
-            <span class="user-nav__num">0</span>
-          </a>
-          <a class="user-nav__link-account" href="#"></a>
-        </div>
       </div>
     </div>
   </header>
+
   <main class="main">
+
+
 
   </main>
   <footer class="footer">
@@ -61,7 +82,7 @@
       <div class="footer-top">
         <div class="footer-top__item footer-top__contact">
           <a class="footer-top__logo logo" href="#">
-            <img class="footer-top__logo-img" src="images/logo.png" alt="logo">
+            <img class="footer-top__logo logo__img" src="images/logo.png" alt="logo">
           </a>
           <ul class="footer-top__list">
             <li class="footer-top__item">
@@ -152,7 +173,9 @@
             </p>
             <form class="footer-top__form" action="#">
               <input class="footer-top__form-input" type="email" placeholder="Email address" required>
-              <button class="footer-top__form-btn" type="submit">Subscribe</button>
+              <button class="footer-top__form-btn" type="submit">
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
@@ -164,24 +187,24 @@
           </p>
         </div>
         <div class="footer-bottom__menu">
-          <ul class="footer-bottom__menu-list">
-            <li class="footer-bottom__menu-item">
-              <a class="footer-bottom__menu-link" href="#">
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
                 Home
               </a>
             </li>
-            <li class="footer-bottom__menu-item">
-              <a class="footer-bottom__menu-link" href="#">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
                 About
               </a>
             </li>
-            <li class="footer-bottom__menu-item">
-              <a class="footer-bottom__menu-link" href="#">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
                 Blog
               </a>
             </li>
-            <li class="footer-bottom__menu-item">
-              <a class="footer-bottom__menu-link" href="#">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
                 Contact
               </a>
             </li>

@@ -77,3 +77,34 @@ body {
     box-shadow: 0 0 0 3px $lightskyblue;
   }
 }
+
+.top {
+  background-color: #edf1f4;
+  height: 125px;
+
+  &__title {
+    font-size: 36px;
+    padding-top: 35px;
+  }
+}
+
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    font-family: Rubik;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $very-dark;
+    opacity: 0.6;
+  }
+
+  &__link {
+    &::after {
+      content: '/';
+      padding: 5px;
+    }
+  }
+}

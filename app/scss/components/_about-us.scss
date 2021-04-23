@@ -1,0 +1,169 @@
+.about-us {
+  &__inner {
+    display: flex;
+    padding: 120px 0;
+  }
+
+  &__img {
+    object-fit: cover;
+    margin-right: 50px;
+  }
+
+  &__top-list span {
+    @extend %rubik-700;
+    font-size: 140px;
+    color: $btn-color;
+    margin-right: 30px;
+  }
+
+  &__list {
+    display: inline-block;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #243f4d;
+  }
+
+  &__title {
+    text-align: left;
+    padding: 30px 0 50px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #243f4d;
+  }
+
+  &__line {
+    max-width: 500px;
+    height: 3px;
+    opacity: 0.1;
+    background-color: #09316f;
+    margin: 60px 0 30px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  .vertical-line {
+    float: left;
+    width: 1px;
+    height: 81px;
+    opacity: 0.1;
+    background-color: #09316f;
+  }
+
+  &__icon {
+    width: 43px;
+    height: 42px;
+    fill: #a3bbc8;
+    margin-right: 20px;
+  }
+
+  &__list-num {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list--number {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #243f4d;
+  }
+
+  &__list--name {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+
+  .gen {
+    height: 320px;
+    background-color: #fcd7b6;
+
+    &__inner {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 90px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background-color: #a3bbc8;
+        border-radius: 50%;
+        top: 30px;
+        right: 40px;
+      }
+    }
+
+    &__icon {
+      width: 67px;
+      height: 64px;
+      z-index: 1;
+    }
+
+    &__number {
+      @extend %dmsans-700;
+      font-size: 36px;
+      color: #243f4d;
+      padding-top: 15px;
+    }
+
+    &__name {
+      @extend %dmsans-700;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #243f4d;
+    }
+  }
+}
+
+.team {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+  }
+
+  &__item {
+    max-width: 340px;
+    margin-right: 30px;
+  }
+  &__title {
+    font-family: DMSans;
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #243f4d;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #243f4d;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+}

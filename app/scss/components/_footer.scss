@@ -7,7 +7,7 @@
 
     .logo {
       &__img {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
       }
     }
 
@@ -130,8 +130,8 @@
       color: $link-color;
     }
 
-    &__menu-item,
-    &__menu-link {
+    &__item,
+    &__link {
       color: $link-color;
 
       &:hover {
@@ -150,14 +150,14 @@
       align-items: center;
     }
 
-    &__menu-list {
+    &__list {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
 
     }
 
-    &__menu-item {
+    &__item {
       border-right: 1px solid $grayish-blue;
       margin-right: 15px;
       padding-right: 15px;
