@@ -1,0 +1,66 @@
+.slider-partners {
+  height: 250px;
+  background-color: #fef7f0;
+
+  &__slide {
+    margin-top: 25px;
+  }
+}
+
+.modal {
+  max-width: 470px;
+  margin: 0 auto 120px;
+
+  &__label {
+    display: block;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 3;
+    color: #436372;
+    // margin-bottom: 28px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #f6f6f6;
+    padding: 0 15px;
+    margin-bottom: 28px;
+  }
+
+  &__btn {
+    display: block;
+    min-width: 100%;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: white;
+    transition: color, background-color .3s;
+    &:hover {
+      @extend %rubik-500;
+      font-size: 18px;
+      color: #243f4d;
+      background-color: white;
+      border: 2px solid #a3bbc8;
+      
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-color: #f6f6f6;
+  }
+
+  &__error {
+    display: block;
+    text-align: center;
+    margin: 33px 0 24px;
+  }
+}

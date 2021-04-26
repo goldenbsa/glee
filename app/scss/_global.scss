@@ -81,18 +81,20 @@ body {
 .top {
   background-color: #edf1f4;
   height: 125px;
+  margin-bottom: 120px;
 
   &__title {
+    @extend %rubik-300;
     font-size: 36px;
     padding-top: 35px;
   }
 }
 
 .breadcrumbs {
-
-  &__list {
+  display: flex;
+  justify-content: center;
+  &__item {
     display: flex;
-    justify-content: center;
     font-family: Rubik;
     @extend %rubik-400;
     font-size: 14px;
