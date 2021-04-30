@@ -127,21 +127,21 @@ body {
     height: 50px;
     border: 1px solid $btn-color;
     margin-right: 15px;
-
-  }
-
-  &__link--active {
-    background-color: $btn-color;
-    color: #fff;
   }
 
   &__link {
     display: block;
     @extend %rubik-400;
     font-size: 16px;
+    color: #243f4d;
     line-height: 1.9;
     padding: 10px 0;
+    text-align: center;
+  }
 
+  &__link--active {
+    background-color: $btn-color;
+    color: #fff;
   }
 
   &__item-next {

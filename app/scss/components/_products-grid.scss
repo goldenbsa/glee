@@ -55,7 +55,7 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-category__checkbox,
+    &:checked+.filter-category__checkbox
       {
       background-color: $light-grayish-blue;
       border-radius: 5px;
@@ -149,7 +149,7 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-brand__checkbox,
+    &:checked+.filter-brand__checkbox
       {
       background-color: $light-grayish-blue;
       border-radius: 5px;

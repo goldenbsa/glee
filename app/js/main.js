@@ -51,4 +51,12 @@ $(function () {
     readOnly: true
   });
 
+  $("#rateYo, #rateYo2, #rateYo3, #rateYo4").rateYo({
+    starWidth: "20px",
+    spacing: "10px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
+
 });
