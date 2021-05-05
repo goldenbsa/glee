@@ -1,0 +1,147 @@
+.blog-list {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blog-content {
+    max-width: 830px;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__info {
+    display: inline-block;
+    max-width: 275px;
+    height: 71px;
+    background-color: #a3bbc8;
+    @extend %rubik-400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: white;
+    transform: translateY(-71px);
+    padding: 22px 26px;
+  }
+
+  .blog__icon {
+    fill: white;
+  }
+
+  &__title {
+    font-family: Rubik;
+    font-size: 36px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    padding-bottom: 35px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #243f4d;
+  }
+
+  &__btn {
+    display: inline-block;
+    min-width: 180px;
+    height: 60px;
+    border: 1px solid #a3bbc8;
+    background-color: #fff;
+    @extend %rubik-700;
+    font-size: 15px;
+    color: #a3bbc8;
+    text-align: left;
+    padding-left: 22px;
+    margin: 40px 0 100px;
+  }
+
+  &__btn::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    background-image: url('../images/blog-list/arrow-right.svg');
+    margin: 5px 0 0 40px;
+  }
+
+  .products-grid__inner {
+    width: 270px;
+  }
+
+  .blog__text-data {
+    padding-right: 18px;
+  }
+
+  .filter-search {
+    margin-bottom: 60px;
+
+    &__form {
+      display: flex;
+    }
+
+    &__input {
+      width: 220px;
+      height: 43px;
+      border: 1px solid #edf1f4;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+      padding: 0 10px;
+    }
+
+    &__btn {
+      width: 48px;
+      height: 43px;
+      background-color: #edf1f4;
+      border-radius: 0 5px 5px 0;
+      outline: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/blog-list/search-btn.svg');
+        background-size: cover;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .recent-posts {
+    &__item {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      max-width: fit-content;
+    }
+
+    &__title {
+      @extend %rubik-400;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333333;
+    }
+
+    &__link {
+      margin: 0 20px 20px 0;
+    }
+
+    .blog__text-data {
+      text-transform: uppercase;
+    }
+
+    .blog__icon {
+      fill: #9a9a9a;
+    }
+  }
+}
