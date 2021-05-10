@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container--big">
+      <div class="header__inner">
+        <nav class="nav">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pages +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">News</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="user-nav">
+            <button class="user-nav__btn button-circle" type="button">
+              <span class="sr-only"> search </span>
+              <a class="user-nav__link-search" href="#"></a>
+              <svg class="icon--search">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <a class="user-nav__link-favorites" href="#">
+              <span class="sr-only"> favorites </span>
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link-basket" href="#">
+              <span class="sr-only"> basket </span>
+              <span class="user-nav__num">0</span>
+            </a>
+            <button class="user-nav__btn button-circle" type="button">
+              <span class="sr-only"> account </span>
+              <a class="user-nav__link-account" href="#"></a>
+              <svg class="icon--account">
+                <use xlink:href="images/sprite.svg#account"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <h2 class="top__title title">
+            Contact
+          </h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__item">
+              <li class="breadcrumbs__list">
+                <a class="breadcrumbs__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                Contact
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__item">
+            <span class="contact__sub-title">
+              Write Here
+            </span>
+            <h3 class="contact__title">
+              Get In Touch
+            </h3>
+
+            <div class="contact-cart">
+              <div class="contact-cart__item">
+                <svg class="icon-address">
+                  <use xlink:href="images/sprite.svg#card-address"></use>
+                </svg>
+                <h5 class="contact-cart__title">
+                  Address
+                </h5>
+                <span class="contact-cart__info-item">
+                  2416 Mapleview Drive
+                  Tampa, FL 33634
+                </span>
+              </div>
+
+              <div class="contact-cart__item contact-cart__item--active">
+                <svg class="icon-email">
+                  <use xlink:href="images/sprite.svg#card-email"></use>
+                </svg>
+                <h5 class="contact-cart__title">
+                  Our Email
+                </h5>
+                <ul class="contact-cart__list">
+                  <li class="contact-cart__link">
+                    <a href="mailto:contact@website.com">Main Email : contact@website.com
+                    </a>
+                  </li>
+                  <li class="contact-cart__link">
+                    <a href="mailto:Info@mail.com">Inquiries : Info@mail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-cart__item">
+                <svg class="icon-phone">
+                  <use xlink:href="images/sprite.svg#card-phone"></use>
+                </svg>
+                <h5 class="contact-cart__title">
+                  Our Phone
+                </h5>
+                <ul class="contact-cart__list">
+                  <li class="contact-cart__link">
+                    <a href="tel:0029129102320">Office Telephone : 0029129102320
+                    </a>
+                  </li>
+                  <li class="contact-cart__link">
+                    <a href="tel:000232439493">Mobile : 000 2324 39493
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="contact-formmap">
+              <div class="contact-form">
+                <form class="form-comments" action="#">
+                  <div class="form-comments__box-input">
+                    <div class="form-comments__text-item">
+                      <input class="form-comments__text-input" type="text" placeholder="Name">
+                    </div>
+                    <div class="form-comments__post-item">
+                      <input class="form-comments__post-input form-comments__post-input--active" type="text"
+                        placeholder="email">
+                    </div>
+                  </div>
+                  <div class="form-comments__textarea-item">
+                    <textarea class="form-comments__textarea" placeholder="Comment"></textarea>
+                  </div>
+                  <button class="form-comments__btn" type="submit">Post Comment</button>
+                </form>
+              </div>
+
+              <div id="map"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog__inner">
+          <h2 class="blog__title title">
+            Our Insights & Articles
+          </h2>
+          <a class="blog__link" href="#">
+            View All
+            <svg class="blog__link--icon">
+              <use xlink:href="images/sprite.svg#blog-arrow"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="blog__news">
+          <div class="blog__items">
+            <div class="blog__item">
+              <img class="blog__img" src="images/blog/news-1.jpg" alt="news">
+              <button class="blog__btn button" type="button">news</button>
+            </div>
+            <div class="blog__text">
+              <p>
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+            <div class="blog__line"></div>
+            <div class="blog__info">
+              <svg class="blog__icon">
+                <use xlink:href="images/sprite.svg#calendar"></use>
+              </svg>
+              <span class="blog__text-data">28 january, 2020</span>
+              <svg class="blog__icon">
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              <span class="blog__text-author">by admin</span>
+            </div>
+          </div>
+
+          <div class="blog__items">
+            <div class="blog__item">
+              <img class="blog__img" src="images/blog/news-2.jpg" alt="news">
+              <button class="blog__btn" type="button">news</button>
+            </div>
+            <div class="blog__text">
+              <p>
+                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              </p>
+            </div>
+            <div class="blog__line"></div>
+            <div class="blog__info">
+              <svg class="blog__icon">
+                <use xlink:href="images/sprite.svg#calendar"></use>
+              </svg>
+              <span class="blog__text-data">28 january, 2020</span>
+              <svg class="blog__icon">
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              <span class="blog__text-author">by admin</span>
+            </div>
+          </div>
+
+          <div class="blog__items">
+            <div class="blog__item">
+              <img class="blog__img" src="images/blog/news-3.jpg" alt="news">
+              <button class="blog__btn" type="button">news</button>
+            </div>
+            <div class="blog__text">
+              <p>
+                Rncididunt ut labore et dolore magna aliqua. Ut enim
+              </p>
+            </div>
+            <div class="blog__line"></div>
+            <div class="blog__info">
+              <svg class="blog__icon">
+                <use xlink:href="images/sprite.svg#calendar"></use>
+              </svg>
+              <span class="blog__text-data">28 january, 2020</span>
+              <svg class="blog__icon">
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              <span class="blog__text-author">by admin </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-partners">
+        <div class="slider-partners__inner container">
+          <div class="customer-logos slider">
+            <div class="slider-partners__slide">
+              <img src="images/partners/peterson_stephanie.png">
+            </div>
+            <div class="slider-partners__slide">
+              <img class="slider-partners__img" src="images/partners/kmn_consulting.png" alt="partners image">
+            </div>
+            <div class="slider-partners__slide">
+              <img class="slider-partners__img" src="images/partners/chatwforce.png" alt="partners image">
+            </div>
+            <div class="slider-partners__slide">
+              <img class="slider-partners__img" src="images/partners/nextg3n.png" alt="partners image">
+            </div>
+            <div class="slider-partners__slide">
+              <img class="slider-partners__img" src="images/partners/vintage.png" alt="partners image">
+            </div>
+            <div class="slider-partners__slide">
+              <img class="slider-partners__img" src="images/partners/kmn_consulting.png" alt="partners image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item footer-top__contact">
+          <a class="footer-top__logo logo" href="#">
+            <img class="footer-top__logo logo__img" src="images/logo.png" alt="logo">
+          </a>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__address" href="#">
+                <span>Address:</span> 4772 Wines Lane
+                Houston, TX 77032
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__phone" href="tel:+8323475843">
+                <span>Telephone:</span> +832-347-5843
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__email" href="mailto:contact@Glee.com">
+                <span>Email:</span> contact@Glee.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__services">
+          <h5 class="footer-top__title">
+            Services
+          </h5>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Return Policy
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Our Blog
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Terms & Condition
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__account">
+          <h5 class="footer-top__title">
+            Account
+          </h5>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Your Account
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Checkout
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Login
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__item-form">
+          <h5 class="footer-top__title">
+            newsletter
+          </h5>
+          <div class="footer-top__text">
+            <p>
+              Subscribe by our newsletter and get
+              update protidin.
+            </p>
+            <form class="footer-top__form" action="#">
+              <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+              <button class="footer-top__form-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__copy">
+          <p>
+            ©2020 CopyRight Example. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-bottom__menu">
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                About
+              </a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async>
+  </script>
+
+  <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+          lat: 29.753365 ,
+          lng: -95.281966
+        },
+        zoom: 9,
+        style:
+        [
+        {
+        "elementType": "geometry",
+        "stylers": [
+        {
+        "hue": "#ff4400"
+        },
+        {
+        "saturation": -68
+        },
+        {
+        "lightness": -4
+        },
+        {
+        "gamma": 0.72
+        }
+        ]
+        },
+        {
+        "featureType": "road",
+        "elementType": "labels.icon"
+        },
+        {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry",
+        "stylers": [
+        {
+        "hue": "#0077ff"
+        },
+        {
+        "gamma": 3.1
+        }
+        ]
+        },
+        {
+        "featureType": "water",
+        "stylers": [
+        {
+        "hue": "#00ccff"
+        },
+        {
+        "gamma": 0.44
+        },
+        {
+        "saturation": -33
+        }
+        ]
+        },
+        {
+        "featureType": "poi.park",
+        "stylers": [
+        {
+        "hue": "#44ff00"
+        },
+        {
+        "saturation": -23
+        }
+        ]
+        },
+        {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+        {
+        "hue": "#007fff"
+        },
+        {
+        "gamma": 0.77
+        },
+        {
+        "saturation": 65
+        },
+        {
+        "lightness": 99
+        }
+        ]
+        },
+        {
+        "featureType": "water",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+        {
+        "gamma": 0.11
+        },
+        {
+        "weight": 5.6
+        },
+        {
+        "saturation": 99
+        },
+        {
+        "hue": "#0091ff"
+        },
+        {
+        "lightness": -86
+        }
+        ]
+        },
+        {
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+        {
+        "lightness": -48
+        },
+        {
+        "hue": "#ff5e00"
+        },
+        {
+        "gamma": 1.2
+        },
+        {
+        "saturation": -23
+        }
+        ]
+        },
+        {
+        "featureType": "transit",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+        {
+        "saturation": -64
+        },
+        {
+        "hue": "#ff9100"
+        },
+        {
+        "lightness": 16
+        },
+        {
+        "gamma": 0.47
+        },
+        {
+        "weight": 2.7
+        }
+        ]
+        }
+        ]
+      });
+    }
+  </script>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
